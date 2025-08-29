@@ -5,7 +5,7 @@ from datetime import datetime
 import altair as alt
 
 # ---------------- CONFIG ----------------
-st.set_page_config(page_title="CTEA Complaint Box", page_icon="📢", layout="wide")
+st.set_page_config(page_title="CTEA Concern Box", page_icon="📢", layout="wide")
 DATA_FILE = "complaints.csv"
 
 # ---------------- HELPERS ----------------
@@ -22,7 +22,7 @@ def create_ticket():
     return str(uuid.uuid4())[:8].upper()  # short unique ticket
 
 # ---------------- UI ----------------
-st.markdown("<h1 style='text-align:center; color:#004aad;'>📢 CTEA Complaint & Concern Portal</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center; color:#004aad;'>📢 CTEA Concern Portal</h1>", unsafe_allow_html=True)
 
 menu = st.sidebar.radio("Navigation", ["Submit Complaint", "Track Complaint", "Admin Dashboard"])
 
